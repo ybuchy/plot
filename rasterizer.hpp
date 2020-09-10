@@ -16,6 +16,6 @@ struct Pixel {
     RGB_Color color;
 };
 
-std::vector<Point> rasterize_line(Point p1, Point p2);
-std::vector<Point> rasterize_triangle(Point p1, Point p2, Point p3);
-template<typename T> T linear_interpolation(Point p1, Point p2, T x);
+std::vector<Point> rasterize_line(const Point p1, const Point p2);
+std::vector<Point> rasterize_triangle(const Point p1, const Point p2, const Point p3);
+template<typename T> T linear_interpolation(const Point p1, const Point p2, const Type x);
